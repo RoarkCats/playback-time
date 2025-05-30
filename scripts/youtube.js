@@ -15,6 +15,7 @@ function updateVidDur() {
     const dur = video.duration;
     const rate = video.playbackRate;
     const newDur = dur/rate;
+    if (isNaN(newDur)) {return;}
     let txt = '';
 
     if (rate !== 1) {
