@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="options-body">
+        <h2>Options</h2>
+
+        <div class="options-content">
+            <label title="Playback Time Format" class="options-label">
+                Style:
+                <select id="option_style" class="option">
+                    <option title="10:00 (6:40)" value=1>X:XX (Y:YY)</option>
+                    <option title="10:00 -3:20" value=2>X:XX &plusmnZ:ZZ</option>
+                    <option title="6:40" value=0>Y:YY</option>
+                </select>
+            </label>
+
+            <!-- <label class="options-label">
+                Checkbox:
+                <input type="checkbox" id="option_checkbox_" />
+            </label> -->
+        </div>
+
+        <div id="status" class="fade-out">Changes saved</div>
+
+        <div class="options-info">
+            Version: 2.0.0 &ensp; By: <a class="options-info" href="https://www.github.com/RoarkCats" target="_blank" rel="noopener noreferrer">RoarkCats</a>
+        </div>
+        <script src="options.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+/* Container for icon and title */
+.popup-header {
+    display: flex;
+    align-items: left;
+    gap: 8px;
+}
+
+/* Consistency */
+.popup-title {
+    margin: 0;
+    padding: 2px;
+}
+
+/* Style embedded options in popup */
+.popup-options {
+    margin-top: 8px;
+    border-radius: 4px;
+    border-color: #e10;
+    height: 100%; /* Gets rid of whitespace below popup*/
+}
+
+
+.options-body {
+    display: grid;
+    row-gap: 0.75rem;
+    padding: 4px;
+    height: 50%;
+}
+.options-body h2 {
+    margin: 0; /* Gets rid of whitespace above header */
+}
+
+.options-content {
+    display: grid;
+    padding-left: 0.5rem;
+    row-gap: 0.5rem;
+    border-left-style: inset;
+}
+
+.options-label {
+    font-size: 150%;
+}
+
+.options-info {
+    font-size: 125%;
+    color: gray;
+}
+.options-info a {
+    color: inherit;
+    font-size: inherit;
+}
+
+#status {
+    font-size: 125%;
+    font-style: italic;
+    padding-bottom: 0.5rem;
+}
+
+.fade-out.fade-show {
+    opacity: 1;
+    transition: none;
+} /* Give trigger to show obj */
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+} /* Remove trigger to fade out */
