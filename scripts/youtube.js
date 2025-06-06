@@ -25,6 +25,7 @@ function updateVidDur() {
         if (timeDurFormat === 0) {txt = formatVidTime(newDur);}
         if (timeDurFormat === 1) {txt = `${formatVidTime(dur)} (${formatVidTime(newDur)})`;}
         if (timeDurFormat === 2) {txt = `${formatVidTime(dur)} ${newDur<dur ? '–':'+'}${formatVidTime(Math.abs(dur-newDur))}`;}
+        if (timeDurFormat === 3) {txt = `${formatVidTime(dur)} ${newDur<dur ? '–':'+'}${formatVidTime(Math.abs(dur-newDur))} (${formatVidTime(newDur)})`;}
     } else {
         txt = formatVidTime(dur);
     }
